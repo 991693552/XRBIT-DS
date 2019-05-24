@@ -10,7 +10,7 @@
     "files": [
         "README.md",
         "XRBIT.ts",
-        "_locales/zh/XRBIT-strings.json"
+        "_locales/zh/XRBIT-DS-strings.json"
     ],
     "testFiles": [
         "test.ts"
