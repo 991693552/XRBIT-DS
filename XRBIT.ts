@@ -171,7 +171,7 @@ namespace XRbit_小车 {
         let val = pins.i2cReadNumber(addr, NumberFormat.UInt8BE);
         return val;
     }
-    //% blockId=SetMotor block="SetMotor|Motor %Motor|Speed %Speed"
+    //% blockId=XRbit_SetMotor block="SetMotor|Motor %Motor|Speed %Speed"
     //% weight=94
     //% blockGap=10
     //% color="#0fbc11"
