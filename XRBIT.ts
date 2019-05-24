@@ -184,11 +184,7 @@ namespace XRbit_小车 {
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
     }
-    /**
-     * *****************************************************************
-     * @param index
-     */
-    
+
     //% blockId=XRBIT_SetServoAngle block="SetServoAngle|Num %Num|Angle %Angle"
     //% weight=94
     //% blockGap=10
