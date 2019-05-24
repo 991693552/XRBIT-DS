@@ -254,7 +254,7 @@ namespace XRbit_小车 {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Program(): neopixel.Strip {
         if (!xrStrip) {
-            xrStrip = neopixel.create(DigitalPin.P16, 3, NeoPixelMode.RGB);
+            xrStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB);
         }
         return xrStrip;
     }
