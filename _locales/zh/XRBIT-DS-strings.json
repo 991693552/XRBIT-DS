@@ -4,10 +4,6 @@
   "XRbit_传感器.Car_Ligth|block": "车灯 |引脚 %pin| 状态为|%value|车灯",
   "XRbit_传感器.Ultrasonic|block": "超声波|Trig引脚 %Trig|Echo引脚 %Echo",
 
-  "XRbit_小车.MovementGroups.goforward|block": "前进",
-  "XRbit_小车.MovementGroups.goback|block": "后退",
-  "XRbit_小车.MovementGroups.turnleft|block": "左转",
-  "XRbit_小车.MovementGroups.turnright|block": "右转",
   "XRbit_小车.MovementGroups.stop|block": "停止",
   "XRbit_小车.motor.leftMotor|block": "左侧电机",
   "XRbit_小车.motor.rightMotor|block": "右侧电机",
