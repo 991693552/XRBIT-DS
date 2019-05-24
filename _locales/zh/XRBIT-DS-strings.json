@@ -1,5 +1,12 @@
 {
-  
+  "XRbit_传感器.enVoice.Voice|block": "有声音",
+  "XRbit_传感器.enVoice.NoVoice|block": "无声音",
+  "XRbit_传感器.enIR.Get|block": "检测到",
+  "XRbit_传感器.enIR.NoGet|block": "未检测",
+  "XRbit_传感器.enLight.Open|block": "打开",
+  "XRbit_传感器.enLight.Close|block": "关闭",
+  "XRbit_传感器.enBuzzer.NoBeep|block": "不响",
+  "XRbit_传感器.enBuzzer.Beep|block": "响",
   "XRbit_传感器.irPin.ir_Left|block": "左侧红外(P12)",
   "XRbit_传感器.irPin.ir_Right|block": "左侧红外(P14)",
   "XRbit_传感器.irPin.ir_Avoid|block": "左侧红外(P13)",
