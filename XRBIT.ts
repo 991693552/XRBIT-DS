@@ -116,10 +116,10 @@ namespace XRbit_传感器 {
 namespace XRbit_小车 {
     const XRBIT_ADDRESS = 0x17
     export enum motor {
-        //% blockId="left" block="leftMotor"
-        left = 0x14,
-        //% blockId="right" block="rightMotor"
-        right = 0x15
+        //% blockId="leftMotor" block="leftMotor"
+        leftMotor = 0x14,
+        //% blockId="rightMotor" block="rightMotor"
+        rightMotor = 0x15
     }
 
     export enum IRValue {
