@@ -15,30 +15,30 @@
 namespace XRbit_传感器 {
 
     export enum enVoice {
-        //% blockId="Voice" block="有声音"
+        //% blockId="Voice" block="Voice"
         Voice = 0,
-        //% blockId="NoVoice" block="无声音"
+        //% blockId="NoVoice" block="NoVoice"
         NoVoice = 1
     }
 
     export enum enIR {
-        //% blockId="Get" block="检测到"
+        //% blockId="Get" block="Get"
         Get = 0,
-        //% blockId="NoVoice" block="未检测"
+        //% blockId="NoVoice" block="NoVoice"
         NoGet = 1
     }
 
     export enum enLight {
-        //% blockId="Open" block="打开"
+        //% blockId="Open" block="Open"
         Open = 0,
-        //% blockId="Close" block="关闭"
+        //% blockId="Close" block="Close"
         Close = 1
     }
 
     export enum enBuzzer {
-        //% blockId="NoBeep" block="不响"
+        //% blockId="NoBeep" block="NoBeep"
         NoBeep = 0,
-        //% blockId="Beep" block="响"
+        //% blockId="Beep" block="Beep"
         Beep
     }
     export enum irPin {
