@@ -122,19 +122,6 @@ namespace XRbit_小车 {
         M2 = 0x15
     }
 
-    export enum MovementGroups {
-        //% blockId="goforward" block="goforward"
-        goforward = 0x01,
-        //% blockId="goback" block="goback"
-        goback = 0x02,
-        //% blockId="turnleft" block="turnleft"
-        turnleft = 0x03,
-        //% blockId="turnright" block="turnright"
-        turnright = 0x04,
-        //% blockId="stop" block="stop"
-        stop = 0x00
-    }
-    
     export enum IRValue {
         Power = 0x45,
         Menu = 0x47,
