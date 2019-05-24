@@ -42,11 +42,11 @@ namespace XRbit_传感器 {
         Beep
     }
     export enum irPin {
-        //% blockId="ir_Left" block="Left IR(P12)"
+        //% blockId="ir_Left" block="Left_IR_P12"
         ir_Left = DigitalPin.P12,
-        //% blockId="ir_Right" block="Right IR(P14)"
+        //% blockId="ir_Right" block="Right_IR_P14"
         ir_Right = DigitalPin.P14,
-        //% blockId="ir_Avoid" block="Avoid IR(P13)"
+        //% blockId="ir_Avoid" block="Avoid_IR_P13"
         ir_Avoid = DigitalPin.P13
     }
 
