@@ -115,7 +115,7 @@ namespace XRbit_传感器 {
 //% weight=5 color=#9900CC icon="\uf1b9"
 namespace XRbit_小车 {
     const XRBIT_ADDRESS = 0x17
-    export enum Motor {
+    export enum motor {
         //% blockId="leftMotor" block="leftMotor"
         M1 = 0x14,
         //% blockId="rightMotor" block="rightMotor"
@@ -176,7 +176,7 @@ namespace XRbit_小车 {
     //% blockGap=10
     //% color="#0fbc11"
     //% Speed.min=-100 Speed.max=100
-    export function SetMotor(Motor: Motor, Speed: number): void {
+    export function SetMotor(Motor: motor, Speed: number): void {
         let buf1 = pins.createBuffer(2);
         let buf2 = pins.createBuffer(2);
         buf1[0] = 0xFF;
