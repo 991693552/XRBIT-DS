@@ -1,18 +1,18 @@
 {
-  "XRBIT.XRbit_Buzzer": "蜂鸣器|引脚 %pin|状态 %value",
-  "XRBIT.XRbit_IR_Sensor": "红外传感器|引脚 %pin|检测到|%value|障碍物",
-  "XRBIT.XRbit_Car_Ligth": "车灯 |引脚 %pin| 状态为|%value|车灯",
-  "XRBIT.XRbit_ultrasonic": "超声波|Trig引脚 %Trig|Echo引脚 %Echo",
+  "XRbit_传感器.XRbit_Buzzer": "蜂鸣器|引脚 %pin|状态 %value",
+  "XRbit_传感器.XRbit_IR_Sensor": "红外传感器|引脚 %pin|检测到|%value|障碍物",
+  "XRbit_传感器.XRbit_Car_Ligth": "车灯 |引脚 %pin| 状态为|%value|车灯",
+  "XRbit_传感器.XRbit_ultrasonic": "超声波|Trig引脚 %Trig|Echo引脚 %Echo",
 
-  "XRBIT.MovementGroups.goforward|block": "前进",
-  "XRBIT.MovementGroups.goback|block": "后退",
-  "XRBIT.MovementGroups.turnleft|block": "左转",
-  "XRBIT.MovementGroups.turnright|block": "右转",
-  "XRBIT.MovementGroups.stop|block": "停止",
+  "XRbit_小车类.MovementGroups.goforward|block": "前进",
+  "XRbit_小车类.MovementGroups.goback|block": "后退",
+  "XRbit_小车类.MovementGroups.turnleft|block": "左转",
+  "XRbit_小车类.MovementGroups.turnright|block": "右转",
+  "XRbit_小车类.MovementGroups.stop|block": "停止",
 
-  "XRBIT.irremote_on_pressed|block": "红外遥控器按钮|%IRValue|被按下",
-  "XRBIT.SetMotor|block": "设置电机|%motor|速度为 %speed",
+  "XRbit_小车类.irremote_on_pressed|block": "红外遥控器按钮|%IRValue|被按下",
+  "XRbit_小车类.SetMotor|block": "设置电机|%motor|速度为 %speed",
 
-  "XRBIT.SaveServoAngle|block": "保存当前角度为默认值",
-  "XRBIT.ReSetServoAngle|block": "恢复所有角度为默认值"
+  "XRbit_小车类.SaveServoAngle|block": "保存当前角度为默认值",
+  "XRbit_小车类.ReSetServoAngle|block": "恢复所有角度为默认值"
 }
