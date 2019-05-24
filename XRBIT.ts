@@ -41,6 +41,15 @@ namespace XRbit_传感器 {
         //% blockId="Beep" block="响"
         Beep
     }
+    export enum irPin {
+        //% blockId="ir_Left" block="左侧红外"
+        ir_L = DigitalPin.P12,
+        //% blockId="ir_Right" block="右侧红外"
+        ir_R = DigitalPin.P14,
+        //% blockId="ir_Avoid" block="中间红外"
+        ir_M = DigitalPin.P13
+    }
+
 
     //% blockId=XRbit_Buzzer block="Buzzer|pin %pin|value %value"
     //% weight=100
@@ -58,7 +67,7 @@ namespace XRbit_传感器 {
     //% blockGap=10
     //% color="#87CEEB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function IR_Sensor(pin: DigitalPin, value: enIR): boolean {
+    export function IR_Sensor(pin: irPin, value: enIR): boolean {
         pins.setPull(pin, PinPullMode.PullUp);
         if (pins.digitalReadPin(pin) == value) {
             return true;
