@@ -229,7 +229,6 @@ namespace XRbit_小车 {
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
     }
-
     //% blockId=irremote_on_pressed block = "irremote_on_pressed on |%IRValue| button pressed"
     //% color="#0fbc11"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -248,7 +247,6 @@ namespace XRbit_小车 {
         }
         return irread;
     }
-
     //% blockId=XRbit_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
     //% blockGap=10
