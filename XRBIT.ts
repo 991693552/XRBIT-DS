@@ -138,6 +138,7 @@ namespace XRbit_传感器 {
 //% weight=5 color=#9900CC icon="\uf1b9"
 namespace XRbit_小车 {
     const XRBIT_ADDRESS = 0x17
+    let xrStrip: neopixel.Strip;
     export enum enMotor {
         //% blockId="leftMotor" block="左侧电机"
         leftMotor = 0x14,
@@ -242,6 +243,20 @@ namespace XRbit_小车 {
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf1);
         pins.i2cWriteBuffer(XRBIT_ADDRESS,buf2);
     }
+
+    //% blockId=XRit_RGB_Car_Program block="RGB_Car_Program"
+    //% weight=99
+    //% blockGap=10
+    //% color="#0fbc11"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function RGB_Car_Program(): neopixel.Strip {
+         
+        if (!xrStrip) {
+            xrStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB);
+        }
+        return xrStrip;
+    }
+
     //% blockId=irremote_on_pressed block = "irremote_on_pressed on |%IRValue| button pressed"
     //% color="#0fbc11"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
