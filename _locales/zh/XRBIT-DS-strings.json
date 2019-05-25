@@ -15,6 +15,7 @@
   "XRbit_传感器.Car_Ligth|block": "车灯 |引脚 %pin| 状态为|%value|车灯",
   "XRbit_传感器.Ultrasonic|block": "超声波|Trig引脚 %Trig|Echo引脚 %Echo",
 
+  "XRbit_小车.RGB_Car_Program|block": "小车彩灯",
   "XRbit_小车.motor.leftMotor|block": "左侧电机",
   "XRbit_小车.motor.rightMotor|block": "右侧电机",
   "XRbit_小车.irremote_on_pressed|block": "红外遥控器按钮|%IRValue|被按下",
