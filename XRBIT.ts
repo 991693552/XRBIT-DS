@@ -71,21 +71,22 @@ namespace XRbit_传感器 {
     //% color="#87CEEB"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function IR_Sensor(pin: irPin, value: enIR): boolean {
+        let Pin:DigitalPin;
         if(pin==1)
         {
-            let Pin = DigitalPin.P12;
+            Pin = DigitalPin.P12;
         }
         if(pin==2)
         {
-            let Pin = DigitalPin.P14;
+            Pin = DigitalPin.P14;
         }
         if(pin==3)
         {
-            let Pin = DigitalPin.P13;
+            Pin = DigitalPin.P13;
         }
 
-        pins.setPull(pin, PinPullMode.PullUp);
-        if (pins.digitalReadPin(pin) == value) {
+        pins.setPull(Pin, PinPullMode.PullUp);
+        if (pins.digitalReadPin(Pin) == value) {
             return true;
         }
         else {
