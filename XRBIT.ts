@@ -124,7 +124,6 @@ namespace XRbit_传感器 {
 //% weight=5 color=#9900CC icon="\uf1b9"
 namespace XRbit_小车 {
     const XRBIT_ADDRESS = 0x17
-    let xrStrip: neopixel.Strip;
     export enum enMotor {
         //% blockId="leftMotor" block="左侧电机"
         leftMotor = 0x14,
