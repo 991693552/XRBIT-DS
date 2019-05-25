@@ -7,7 +7,101 @@
  * 自定义图形块
  */
 
+/*****************************************************************************************************************************************
+ *  传感器类 ***************************************************************************************************************************** 
+ ****************************************************************************************************************************************/
 
+//% color="#87CEEB" weight=24 icon="\uf1b6"
+namespace XRbit_传感器 {
+
+    export enum enVoice {
+        //% blockId="Voice" block="Voice"
+        Voice = 0,
+        //% blockId="NoVoice" block="NoVoice"
+        NoVoice = 1
+    }
+
+    export enum enIR {
+        //% blockId="Get" block="Get"
+        Get = 0,
+        //% blockId="NoVoice" block="NoVoice"
+        NoGet = 1
+    }
+
+    export enum enLight {
+        //% blockId="Open" block="Open"
+        Open = 0,
+        //% blockId="Close" block="Close"
+        Close = 1
+    }
+
+    export enum enBuzzer {
+        //% blockId="NoBeep" block="NoBeep"
+        NoBeep = 0,
+        //% blockId="Beep" block="Beep"
+        Beep
+    }
+    export enum irPin {
+        //% blockId="ir_Left" block="Left_IR_P12"
+        ir_Left = DigitalPin.P12,
+        //% blockId="ir_Right" block="Right_IR_P14"
+        ir_Right = DigitalPin.P14,
+        //% blockId="ir_Avoid" block="Avoid_IR_P13"
+        ir_Avoid = DigitalPin.P13
+    }
+
+
+    //% blockId=XRbit_Buzzer block="Buzzer|pin %pin|value %value"
+    //% weight=100
+    //% blockGap=10
+    //% color="#87CEEB"
+    //% value.min=0 value.max=1
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function Buzzer(pin: DigitalPin, value: enBuzzer): void {
+        pins.setPull(pin, PinPullMode.PullNone);
+        pins.digitalWritePin(pin, value);
+    }
+
+
+    //% blockId=XRbit_Car_Ligth block="Car_Ligth |pin %pin| |%value|车灯"
+    //% weight=100
+    //% blockGap=10
+    //% color="#87CEEB"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function Car_Ligth(pin: DigitalPin, value: enLight): boolean {
+        pins.setPull(pin, PinPullMode.PullUp);
+        if (pins.digitalReadPin(pin) == value) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    //% blockId=XRbit_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
+    //% color="#87CEEB"
+    //% weight=100
+    //% blockGap=10
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function Ultrasonic(Trig: DigitalPin, Echo: DigitalPin): number {
+        // send pulse
+        let list:Array<number> = [0, 0, 0, 0, 0];
+        for (let i = 0; i < 5; i++) {
+            pins.setPull(Trig, PinPullMode.PullNone);
+            pins.digitalWritePin(Trig, 0);
+            control.waitMicros(2);
+            pins.digitalWritePin(Trig, 1);
+            control.waitMicros(15);
+            pins.digitalWritePin(Trig, 0);
+
+            let d = pins.pulseIn(Echo, PulseValue.High, 43200);
+            list[i] = Math.floor(d / 40)
+        }
+        list.sort();
+        let length = (list[1] + list[2] + list[3])/3;
+        return  Math.floor(length);
+    }
+}
 
 /*****************************************************************************************************************************************
  *  小车类 ***************************************************************************************************************************** 
