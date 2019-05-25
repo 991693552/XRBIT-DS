@@ -11,6 +11,7 @@
   "XRbit_传感器.irPin.ir_Right|block": "左侧红外(P14)",
   "XRbit_传感器.irPin.ir_Avoid|block": "左侧红外(P13)",
   "XRbit_传感器.Buzzer|block": "蜂鸣器|引脚 %pin|状态 %value",
+  "XRbit_传感器.IR_Sensor|block": "红外传感器|引脚 %pin|检测到|%value|障碍物",
   "XRbit_传感器.Car_Ligth|block": "车灯 |引脚 %pin| 状态为|%value|车灯",
   "XRbit_传感器.Ultrasonic|block": "超声波|Trig引脚 %Trig|Echo引脚 %Echo",
 
