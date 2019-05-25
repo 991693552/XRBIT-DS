@@ -39,18 +39,15 @@ namespace XRbit_传感器 {
         //% blockId="NoBeep" block="NoBeep"
         NoBeep = 0,
         //% blockId="Beep" block="Beep"
-        Beep = 1
+        Beep
     }
     export enum irPin {
         //% blockId="ir_Left" block="Left_IR_P12"
-        //ir_Left = DigitalPin.P12,
-        ir_Left = 1,
+        ir_Left = DigitalPin.P12,
         //% blockId="ir_Right" block="Right_IR_P14"
-        //ir_Right = DigitalPin.P14,
-        ir_Right = 2,
+        ir_Right = DigitalPin.P14,
         //% blockId="ir_Avoid" block="Avoid_IR_P13"
-        //ir_Avoid = DigitalPin.P13
-        ir_Avoid = 3
+        ir_Avoid = DigitalPin.P13
     }
 
 
@@ -65,6 +62,7 @@ namespace XRbit_传感器 {
         pins.digitalWritePin(pin, value);
     }
 
+<<<<<<< HEAD
     //% blockId=XRbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|障碍物"
     //% weight=100
     //% blockGap=10
@@ -94,6 +92,8 @@ namespace XRbit_传感器 {
         }
     }
 
+=======
+>>>>>>> parent of 25c624f... Update XRBIT.ts
     //% blockId=XRbit_Car_Ligth block="Car_Ligth |pin %pin| |%value|车灯"
     //% weight=100
     //% blockGap=10
