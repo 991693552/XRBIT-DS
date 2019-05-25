@@ -43,13 +43,10 @@ namespace XRbit_传感器 {
     }
     export enum irPin {
         //% blockId="ir_Left" block="Left_IR_P12"
-        //ir_Left = DigitalPin.P12,
         ir_Left = 1,
         //% blockId="ir_Right" block="Right_IR_P14"
-        //ir_Right = DigitalPin.P14,
         ir_Right = 2,
         //% blockId="ir_Avoid" block="Avoid_IR_P13"
-        //ir_Avoid = DigitalPin.P13
         ir_Avoid = 3
     }
 
