@@ -247,15 +247,4 @@ namespace XRbit_小车 {
         }
         return irread;
     }
-    //% blockId=XRbit_RGB_Car_Program block="RGB_Car_Program"
-    //% weight=99
-    //% blockGap=10
-    //% color="#0fbc11"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Car_Program(): neopixel.Strip {
-        if (!xrStrip) {
-            xrStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB);
-        }
-        return xrStrip;
-    }
 }
