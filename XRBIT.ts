@@ -39,15 +39,18 @@ namespace XRbit_传感器 {
         //% blockId="NoBeep" block="NoBeep"
         NoBeep = 0,
         //% blockId="Beep" block="Beep"
-        Beep
+        Beep = 1
     }
     export enum irPin {
         //% blockId="ir_Left" block="Left_IR_P12"
-        ir_Left = DigitalPin.P12,
+        //ir_Left = DigitalPin.P12,
+        ir_Left = 1,
         //% blockId="ir_Right" block="Right_IR_P14"
-        ir_Right = DigitalPin.P14,
+        //ir_Right = DigitalPin.P14,
+        ir_Right = 2,
         //% blockId="ir_Avoid" block="Avoid_IR_P13"
-        ir_Avoid = DigitalPin.P13
+        //ir_Avoid = DigitalPin.P13
+        ir_Avoid = 3
     }
 
 
@@ -60,6 +63,34 @@ namespace XRbit_传感器 {
     export function Buzzer(pin: DigitalPin, value: enBuzzer): void {
         pins.setPull(pin, PinPullMode.PullNone);
         pins.digitalWritePin(pin, value);
+    }
+
+    //% blockId=XRbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|障碍物"
+    //% weight=100
+    //% blockGap=10
+    //% color="#87CEEB"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function IR_Sensor(pin: irPin, value: enIR): boolean {
+        if(pin==1)
+        {
+            let Pin = DigitalPin.P12;
+        }
+        if(pin==2)
+        {
+            let Pin = DigitalPin.P14;
+        }
+        if(pin==3)
+        {
+            let Pin = DigitalPin.P13;
+        }
+
+        pins.setPull(pin, PinPullMode.PullUp);
+        if (pins.digitalReadPin(pin) == value) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     //% blockId=XRbit_Car_Ligth block="Car_Ligth |pin %pin| |%value|车灯"
